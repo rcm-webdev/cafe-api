@@ -2,7 +2,6 @@ const express = require("express");
 const serverless = require("serverless-http");
 const cors = require("cors");
 const path = require("path");
-const favicon = require("serve-favicon");
 
 const app = express();
 app.use(cors());
