@@ -1,16 +1,25 @@
 # Local Cafe API
 
-A simple Express-based API that provides information about various cafes around the world. This project is deployed as a serverless function on Netlify, making it easy to scale and maintain.
+An open-source API designed to share and discover cafes around the world. Built with Express.js and deployed as a serverless function on Netlify, this API allows developers and coffee lovers to contribute their favorite coffee spots, complete with details like specialties, features, and location data. Use the API to explore cafes by country, state, or city, or contribute your favorite local cafe!
 
 ![Local Cafe API Screenshot](/public/images/local-api.webp)
 
 Link to project: [DEMO](https://local-cafe-api.netlify.app/)
 
-## How It's Made:
+## 🌍 Project Overview
 
-**Tech used:** JavaScript, Node.js, Express, Serverless Functions, Netlify
+The Local Cafe API provides a curated list of cafes, categorized by geographic location. Users can filter cafes by country, state, or city using query parameters. Developers are encouraged to contribute new cafes or extend the functionality by adding popular drinks or other features.
 
-This project is built using Express.js and deployed as a serverless function on Netlify. The API serves information about various cafes in Spokane, including their names, addresses, specialties, and features.
+Key features:
+
+- Geographic Filtering: Filter cafes by country, state, and city
+- CORS Enabled: Easy integration with front-end applications
+- Serverless Architecture: Deployed on Netlify for seamless scaling
+- JSON Responses: Providing cafe details like name, address, specialties, and more
+
+**🚀 Tech used:** JavaScript, Node.js, Express, Serverless Functions, Netlify
+
+This project is built using Express.js and deployed as a serverless function on Netlify. The API serves information about various cafes around the world, including their names, addresses, specialties, and features.
 
 Key aspects of the project:
 
@@ -19,6 +28,21 @@ Key aspects of the project:
 - CORS enabled for cross-origin requests
 - JSON responses for easy integration with front-end applications
 - Error handling for undefined routes
+
+## 📂 Project Structure
+
+```bash
+/public
+  └── index.html         # Static landing page
+  └── images/            # Image assets
+/functions
+  └── api.js             # Main API logic for filtering cafes by country/state/city
+/src
+  └── cafes.js           # List of cafe data (categorized by location)
+/tests
+  └── api.test.js        # Unit tests for the API
+
+```
 
 The project structure is optimized for Netlify deployment, with the main API logic contained in a single file (`api.js`) within the `functions` directory.
 
