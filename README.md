@@ -1,10 +1,10 @@
-# Spokane Cafe API
+# Local Cafe API
 
-A simple Express-based API that provides information about various cafes in Spokane, Washington. This project is deployed as a serverless function on Netlify, making it easy to scale and maintain.
+A simple Express-based API that provides information about various cafes around the world. This project is deployed as a serverless function on Netlify, making it easy to scale and maintain.
 
-![Spokane Cafe API Screenshot](/public/images/localapi.webp)
+![Local Cafe API Screenshot](/public/images/local-api.webp)
 
-Link to project: [DEMO](https://spokane-cafe-api.netlify.app/)
+Link to project: [DEMO](https://local-cafe-api.netlify.app/)
 
 ## How It's Made:
 
