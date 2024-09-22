@@ -5,6 +5,12 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
+// Serve favicon
+app.use(
+  "/favicon.ico",
+  express.static(path.join(__dirname, "../public/favicon/favicon.ico"))
+);
+
 let cafe = {
   "made with love": {
     name: "Made With Love Bakery",
