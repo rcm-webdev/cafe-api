@@ -4,7 +4,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:scss": "sass public/src/scss/style.scss:public/css/style.css --style compressed",
+    "build": "npm run build:scss && build functions"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +17,8 @@
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.79.3"
   }
 }
