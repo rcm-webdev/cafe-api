@@ -2,15 +2,13 @@ const express = require("express");
 const serverless = require("serverless-http");
 const cors = require("cors");
 const path = require("path");
+const favicon = require("serve-favicon");
 
 const app = express();
 app.use(cors());
 
 // Serve favicon
-app.use(
-  "/favicon.ico",
-  express.static(path.join(__dirname, "../public/favicon/favicon.ico"))
-);
+app.use(favicon(path.join(__dirname, "../public/favicon/favicon.ico")));
 
 let cafe = {
   "made with love": {
