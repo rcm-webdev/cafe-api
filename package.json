@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "build:scss": "sass public/src/scss/style.scss:public/css/style.css --style compressed",
-    "build": "npm run build:scss && build functions"
+    "build": "npm run build:scss"
   },
   "author": "",
   "license": "ISC",
