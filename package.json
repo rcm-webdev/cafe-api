@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build:scss": "sass public/src/scss/style.scss:public/css/style.css --style compressed",
+    "build:scss": "sass /src/scss/style.scss:/css/style.css --style compressed",
     "build": "npm run build:scss"
   },
   "author": "",
