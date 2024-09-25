@@ -195,7 +195,7 @@ video {
     }
   }
 
-  &-hover {
+  &:hover {
     scale: 1.05;
     background-color: var(--color-black-200);
   }
