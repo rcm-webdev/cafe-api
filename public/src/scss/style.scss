@@ -193,6 +193,10 @@ video {
     .darkmode & {
       background-color: var(--color-blue-500);
     }
+
+    &:hover {
+      background-color: var(--color-black-300);
+    }
   }
 
   &:hover {
