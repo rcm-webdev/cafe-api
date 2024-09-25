@@ -4,7 +4,7 @@
   "main": "functions/api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "dev": "node functions/api.js",
     "build:scss": "sass public/src/scss/style.scss public/css/style.css --style compressed",
     "build": "npm run build:scss"
   },
